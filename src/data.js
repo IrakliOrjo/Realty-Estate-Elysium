@@ -69,7 +69,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '110000',
+    price: '$ 110000',
     agent: {
       image: Agent1,
       name: 'Patricia Tullert',
@@ -90,7 +90,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '140000',
+    price: '$ 140000',
     agent: {
       image: Agent2,
       name: 'Daryl Hawker',
@@ -111,7 +111,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '170000',
+    price: '$ 170000',
     agent: {
       image: Agent3,
       name: 'Amado Smith',
@@ -132,7 +132,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2016',
-    price: '200000',
+    price: '$ 200000',
     agent: {
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
@@ -153,7 +153,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '4200 sq ft',
     year: '2015',
-    price: '210000',
+    price: '$ 210000',
     agent: {
       image: Agent5,
       name: 'Grover Robinson',
