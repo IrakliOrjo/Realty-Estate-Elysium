@@ -5,8 +5,14 @@ import {housesData} from '../data'
 import {useParams} from 'react-router-dom'
 
 import {BiBed, BiBath, BiArea} from 'react-icons/bi'
+import {IoIosConstruct} from 'react-icons/io'
+import {MdBalcony} from 'react-icons/md'
+import {FaToilet,FaParking,FaChair} from 'react-icons/fa'
+import {GiHeatHaze,GiElevator} from 'react-icons/gi'
 
 import {Link} from 'react-router-dom'
+
+import ImageSlider from '../components/ImageSlider';
 
 const PropertyDetails = () => {
   //get house id
@@ -18,7 +24,8 @@ const PropertyDetails = () => {
     return house.id === parseInt(id)
   })
   
-  //console.log(house[0].address)
+ 
+  
 
   return (
   <section>
@@ -27,17 +34,18 @@ const PropertyDetails = () => {
         <div>
           <h2 className='text-2xl font-semibold'>{house.name}</h2>
           <h3 className='text-lg mb-4'>{house.address}</h3>
+          
         </div>
         <div className='mb-4 lg:mb-0 flex gap-x-2 text-sm'>
           <div className='bg-green-500 text-white px-3 rounded-full'>{house.type}</div>
           <div className='bg-violet-500 text-white px-3 rounded-full'>{house.country}</div>
         </div>
-        <div className='text-3xl font-semibold text-violet-600'>$ {house.price}</div>
+        <div className='text-3xl font-semibold text-violet-600'> {house.price}</div>
       </div>
       <div className='flex flex-col items-start gap-8 lg:flex-row'>
         <div className='max-w-[768px]'>
           <div className='mb-8'>
-            <img src={house.imageLg} alt='house' />
+            <ImageSlider slides={house.slides}/>
           </div>
           <div className='flex gap-x-6 text-violet-700 mb-6 '>
             <div className='flex gap-x-2 items-center'>
@@ -53,7 +61,41 @@ const PropertyDetails = () => {
               <div>{house.surface}</div>
             </div>
           </div>
-          <div>{house.description}</div>
+          <div className='m-0'>
+            <div className='border m-0 border-violet-400 border-solid 
+            flex flex-col justify-between py-8 gap-6 lg:flex-wrap lg:h-[230px]'>
+              
+              <p className=''>
+                <IoIosConstruct className='mr-1 text-2xl text-violet-500 inline-block' />
+                ახალი გარემონტებული
+                </p>
+              <p className=''>
+                <MdBalcony className='mr-1 text-2xl text-violet-500 inline-block' />
+                აივანი
+                </p>
+                <p className=''>
+                <FaToilet className='mr-1 text-2xl text-violet-500 inline-block' />
+                სველი წერტილი
+                </p>
+                <p className=''>
+                <GiHeatHaze className='mr-1 text-2xl text-violet-500 inline-block' />
+                გათბობა: ცენტრალური
+                </p>
+                <p className=''>
+                <FaParking className='mr-1 text-2xl text-violet-500 inline-block' />
+                პარკინგი
+                </p>
+                <p className=''>
+                <FaChair className='mr-1 text-2xl text-violet-500 inline-block' />
+                ავეჯი
+                </p>
+                <p className=''>
+                <GiElevator className='mr-1 text-2xl text-violet-500 inline-block' />
+                ლიფტი
+                </p>
+              
+            </div>
+          </div>
         </div>
         <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8 '>
           <div className='flex items-center gap-x-4 mb-8 '>
@@ -62,7 +104,7 @@ const PropertyDetails = () => {
             </div>
             <div>
               <div className='font-bold text-lg '>{house.agent.name}</div>
-              <Link to='' className='text-violet-700 text-sm '>View Listings</Link>
+              <Link to='' className='text-violet-700 text-sm '>Director</Link>
             </div>
           </div>
           {/*form */}

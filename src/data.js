@@ -57,17 +57,17 @@ import Agent12 from './assets/img/agents/agent12.png';
 export const housesData = [
   {
     id: 1,
-    type: 'House',
-    name: 'House 1',
+    type: 'სახლი',
+    name: 'სახლი 1',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
+      'იყიდება სახლი არაგვისპირში, მდინარის პირას ლამაზი ხედით',
     image: House1,
     imageLg: House1Lg,
-    country: 'United States',
-    address: '7240C Argyle St. Lawndale, CA 90260',
+    country: 'საქართველო',
+    address: 'არაგვისპირი, დუშეთის რაიონი',
     bedrooms: '6',
     bathrooms: '3',
-    surface: '4200 sq ft',
+    surface: '4200 კვ.მ',
     year: '2016',
     price: '$ 110000',
     agent: {
@@ -75,6 +75,11 @@ export const housesData = [
       name: 'Patricia Tullert',
       phone: '0123 456 78910',
     },
+    slides: [
+      {url: 'https://media.istockphoto.com/id/1396856251/photo/colonial-house.jpg?s=2048x2048&w=is&k=20&c=3hG8AEV27QqavGnln-sIwTTLD-jp7u_fzxwo9r3uZz8='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='}  
+    ]
   },
   {
     id: 2,
@@ -96,6 +101,11 @@ export const housesData = [
       name: 'Daryl Hawker',
       phone: '0123 456 78910',
     },
+   slides: [
+      {url: 'https://media.istockphoto.com/id/1396856251/photo/colonial-house.jpg?s=2048x2048&w=is&k=20&c=3hG8AEV27QqavGnln-sIwTTLD-jp7u_fzxwo9r3uZz8='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='}  
+    ]
   },
   {
     id: 3,
@@ -117,6 +127,11 @@ export const housesData = [
       name: 'Amado Smith',
       phone: '0123 456 78910',
     },
+    slides: [
+      {url: 'https://media.istockphoto.com/id/1396856251/photo/colonial-house.jpg?s=2048x2048&w=is&k=20&c=3hG8AEV27QqavGnln-sIwTTLD-jp7u_fzxwo9r3uZz8='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='}  
+    ]
   },
   {
     id: 4,
@@ -138,6 +153,11 @@ export const housesData = [
       name: 'Kaitlyn Gonzalez',
       phone: '0123 456 78910',
     },
+    slides: [
+      {url: 'https://media.istockphoto.com/id/1396856251/photo/colonial-house.jpg?s=2048x2048&w=is&k=20&c=3hG8AEV27QqavGnln-sIwTTLD-jp7u_fzxwo9r3uZz8='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='}  
+    ]
   },
   {
     id: 5,
@@ -159,6 +179,11 @@ export const housesData = [
       name: 'Grover Robinson',
       phone: '0123 456 78910',
     },
+    slides: [
+      {url: 'https://media.istockphoto.com/id/1396856251/photo/colonial-house.jpg?s=2048x2048&w=is&k=20&c=3hG8AEV27QqavGnln-sIwTTLD-jp7u_fzxwo9r3uZz8='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='},
+      {url:'https://media.istockphoto.com/id/1396858846/photo/american-traditional-colonial-house.jpg?s=2048x2048&w=is&k=20&c=LBMnCCo-1DyO_9hjcbLhg23QbpMsjtIyi-Ohrq2LJIU='}  
+    ]
   },
   {
     id: 6,
