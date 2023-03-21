@@ -15,7 +15,7 @@ const PriceRangeDropdown = () => {
 
   const prices = [
     {
-      value: 'Price Range (any)'
+      value: 'ნებისმიერი ფასი'
     },
     {
       value: '0 - 100000'
@@ -42,7 +42,7 @@ const PriceRangeDropdown = () => {
       <RiWallet3Line className='dropdown-icon-primary' />
       <div>
         <div className='text-[15px] font-medium leading-tight'>{price}</div>
-        <div className='text-[13px]'>Choose Price</div>
+        <div className='text-[13px]'>აირჩიეთ ფასი</div>
       </div>
         {
           isOpen ? (

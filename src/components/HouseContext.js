@@ -7,12 +7,12 @@ export const HouseContext = createContext();
 
 const HouseContextProvider = ({children}) => {
   const [houses, setHouses] = useState(housesData);
-  const [country, setCountry] = useState('Address (any)');
+  const [country, setCountry] = useState('ადგილმდებარეობა (ნებისმიერი)');
 
   const [countries, setCountries] = useState([]);
-  const [property, setProperty] = useState('Property type (any)');
+  const [property, setProperty] = useState('ქონების ტიპი (ნებისმიერი)');
   const [properties, setProperties] = useState([]);
-  const [price, setPrice] = useState('Price range (any)');
+  const [price, setPrice] = useState('ფასის ფარგლები (ნებისმიერი)');
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

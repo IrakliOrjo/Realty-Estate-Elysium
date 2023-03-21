@@ -4,11 +4,15 @@ import {housesData} from '../data'
 
 import {useParams} from 'react-router-dom'
 
-import {BiBed, BiBath, BiArea} from 'react-icons/bi'
+import {BiBed, BiBath, BiArea,BiMailSend} from 'react-icons/bi'
 import {IoIosConstruct} from 'react-icons/io'
 import {MdBalcony} from 'react-icons/md'
 import {FaToilet,FaParking,FaChair} from 'react-icons/fa'
 import {GiHeatHaze,GiElevator} from 'react-icons/gi'
+import {BsPhoneFill} from 'react-icons/bs'
+import {AiFillFacebook} from 'react-icons/ai'
+
+
 
 import {Link} from 'react-router-dom'
 
@@ -62,38 +66,41 @@ const PropertyDetails = () => {
             </div>
           </div>
           <div className='m-0'>
-            <div className='border m-0 border-violet-400 border-solid 
+            <div className='border-b-2 m-0 border-b-violet-400 border-solid 
             flex flex-col justify-between py-8 gap-6 lg:flex-wrap lg:h-[230px]'>
               
               <p className=''>
                 <IoIosConstruct className='mr-1 text-2xl text-violet-500 inline-block' />
-                ახალი გარემონტებული
+                {house.details.repair}
                 </p>
-              <p className=''>
-                <MdBalcony className='mr-1 text-2xl text-violet-500 inline-block' />
+              <p className={`${house.details.balcony ? 'visible' : 'line-through'}`}>
+                <MdBalcony className={`mr-1 text-2xl  text-violet-500 inline-block`} />
                 აივანი
                 </p>
                 <p className=''>
                 <FaToilet className='mr-1 text-2xl text-violet-500 inline-block' />
-                სველი წერტილი
+                სველი წერტილი: {house.details.toilet}
                 </p>
                 <p className=''>
                 <GiHeatHaze className='mr-1 text-2xl text-violet-500 inline-block' />
-                გათბობა: ცენტრალური
+                გათბობა: {house.details.heat}
                 </p>
-                <p className=''>
+                <p className={`${house.details.parking ? 'visible' : 'line-through'}`}>
                 <FaParking className='mr-1 text-2xl text-violet-500 inline-block' />
                 პარკინგი
                 </p>
-                <p className=''>
+                <p className={`${house.details.furniture ? 'visible' : 'line-through'}`}>
                 <FaChair className='mr-1 text-2xl text-violet-500 inline-block' />
                 ავეჯი
                 </p>
-                <p className=''>
+                <p className={`${house.details.elevator ? 'visible' : 'line-through'}`}>
                 <GiElevator className='mr-1 text-2xl text-violet-500 inline-block' />
                 ლიფტი
                 </p>
               
+            </div>
+            <div className='mt-8'>
+              <p>{house.description}</p>
             </div>
           </div>
         </div>
@@ -108,30 +115,16 @@ const PropertyDetails = () => {
             </div>
           </div>
           {/*form */}
-          <form className='flex flex-col gap-y-4 '>
-            <input className='border border-gray-300 focus:border-violet-700 
-              outline-none rounded w-full px-4 h-14 text-sm' type='text' 
-              placeholder='Name' />
-            <input className='border border-gray-300 focus:border-violet-700 
-              outline-none rounded w-full px-4 h-14 text-sm' type='text'
-              placeholder='Email' />
-            <input className='border border-gray-300 focus:border-violet-700 
-              outline-none rounded w-full px-4 h-14 text-sm' type='text'
-              placeholder='Phone' />
-            <textarea className='border border-gray-300 focus:border-violet-700 
-              outline-none resize-none rounded w-full 
-              p-4 h-36 text-sm text-gray-400 ' 
-              placeholder='Message'></textarea>
-            <div className='flex gap-x-2 '>
-              <button className='bg-violet-700 hover:bg-violet-800
-               text-white rounded p-4  
-               text-sm w-full transition'>Send Message</button>
-              <button className='border border-violet-700
-               text-violet-700 hover:border-violet-500
-                hover:text-violet-500 rounded p-4 
-                text-sm w-full transition '>Call</button>
-            </div>
-          </form>
+          <div className='h-[1px] bg-[#9e7e9a] mb-4 w-[99%]'></div>
+          <div className=''>
+            <BsPhoneFill className='text-2xl text-violet-500 mr-2 inline-block' />
+            <p className='inline-block font-semibold mb-2'>{house.agent.phone}</p>
+            <br />
+            <BiMailSend className='text-2xl text-violet-500 mr-2 inline-block' />
+            <p className='inline-block font-semibold mb-2'>{house.agent.email}</p>
+            
+            
+          </div>
         </div>
       </div>
     </div>

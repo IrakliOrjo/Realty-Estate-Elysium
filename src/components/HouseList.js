@@ -18,7 +18,7 @@ if(loading) {
 }
 
   if(houses.length < 1 ) {
-    return <div className='text-center text-3xl text-gray-400 mt-48'>Sorry, Nothing is found</div>
+    return <div className='text-center text-3xl text-gray-400 mt-48'>არაფერი არ მოიძებნა</div>
   }
 
 

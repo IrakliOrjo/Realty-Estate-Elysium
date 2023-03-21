@@ -9,8 +9,8 @@ const Banner = () => {
     <div className='flex flex-col lg:flex-row'>
     <div className='lg:ml-8 xl:ml-[135px] flex flex-col items-center lg:items-start text-center lg:text-left justify-center flex-1 px-4 lg:px-0'>
       <h1 className='text-4xl lg:text-[48px] font-semibold leading-none mb-6'>
-        <span className='text-violet-700'>Rent</span> your dream house</h1>
-      <p className='max-w-[480px] mb-8'>Elysium Properties Real Estate, we guarantee your comfort.
+        <span className='text-violet-700'>იპოვეთ</span> თქვენი ოცნების სახლი</h1>
+      <p className='max-w-[540px] mb-8'>Elysium Properties Real Estate, ჩვენ ვუზრუნველყოფთ კომფორტს.
       </p>
     </div>
     {/*Image*/}
