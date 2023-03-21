@@ -15,7 +15,7 @@ const PriceRangeDropdown = () => {
 
   const prices = [
     {
-      value: 'ნებისმიერი ფასი'
+      value: 'ფასი (ნებისმიერი)'
     },
     {
       value: '0 - 100000'

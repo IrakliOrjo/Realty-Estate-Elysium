@@ -6,10 +6,13 @@ import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom'
 import HouseContextProvider from './components/HouseContext'
 
+import ScrollToTop from "./components/ScrollToTop";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HouseContextProvider>
     <Router>
+      <ScrollToTop />
       <App />
     </Router>
   </HouseContextProvider>

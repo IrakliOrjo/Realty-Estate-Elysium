@@ -21,7 +21,7 @@ const HouseContextProvider = ({children}) => {
     })
     
 //remove duplicates
-    const uniqueCountries = ['Location (any)', ...
+    const uniqueCountries = ['ადგილმდებარეობა (ნებისმიერი)', ...
     new Set(allCountries)]
 
    
@@ -38,7 +38,7 @@ const HouseContextProvider = ({children}) => {
     })
     
 //remove duplicates
-    const uniqueProperties = ['Properties (any)', ...
+    const uniqueProperties = ['უძრავი ქონება (ნებისმიერი)', ...
     new Set(allProperties)]
 
    
@@ -54,7 +54,7 @@ const HouseContextProvider = ({children}) => {
     //create a function that checks if the string 
     //includes '(any)' 
     const isDefault = (str) => {
-      return str.split(' ').includes('(any)')
+      return str.split(' ').includes('(ნებისმიერი)')
     }
 
 

@@ -22,18 +22,18 @@ const ImageSlider = ({slides}) => {
   console.log(slides)
     return (
     <div className='h-full relative'>
-       <div className='absolute inline top-[40%] text-white transform 
+       <div className='absolute inline hover:bg-[#2b1026bb] bg-[#3f393e81] rounded-full  top-[40%] text-white transform 
        translate-x-[-50%] left-[2rem] text-[4rem] cursor-pointer'
        onClick={goToPrevious}
        > {`<`} </div>
-       <div className='absolute inline top-[39%] text-white transform 
+       <div className='absolute hover:bg-[#2b1026bb] bg-[#3f393e81] rounded-full inline top-[39%] text-white  transform 
        translate-x-[-50%] right-[0.1rem] text-[4rem] cursor-pointer'
        onClick={goToNext}
        > {`>`} </div>
         <div className=' '
         
         > 
-            <img className='object-cover m-w-[48.25rem] m-h-[23.5rem]' src={`${slides[currentIndex].url}`} alt='house' />
+            <img className='object-cover w-full h-full' src={`${slides[currentIndex].url}`} alt='house' />
 
         </div>
     </div>
