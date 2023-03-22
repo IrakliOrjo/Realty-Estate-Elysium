@@ -6,19 +6,87 @@
   body {
     @apply font-primary bg-gray-200;
   }
+
   .dropdown {
     @apply w-full lg:max-w-[296px] cursor-pointer;
   }
+
   .dropdown-btn {
     @apply flex h-[64px] items-center px-[18px] border rounded-lg;
   }
+
   .dropdown-icon-primary {
     @apply text-2xl mr-[18px] text-violet-700;
   }
+
   .dropdown-icon-secondary {
     @apply text-2xl text-violet-700 ml-auto;
   }
+
   .dropdown-menu {
     @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
   }
+}
+
+#head{
+  background-image: url('./assets/img/bg.jpg');
+  background-size: cover;
+}
+
+.first-bg {
+  background-image: url('./assets/img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.second-bg {
+  background-image: url('./assets/img/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.third-bg {
+  background-image: url('./assets/img/bg3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.printers {
+ 
+
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
