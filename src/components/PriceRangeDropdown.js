@@ -40,8 +40,8 @@ const PriceRangeDropdown = () => {
   return <Menu as='div' className='dropdown relative' >
     <Menu.Button className='dropdown-btn w-full text-left' onClick={()=> setIsOpen(!isOpen) }>
       <RiWallet3Line className='dropdown-icon-primary' />
-      <div>
-        <div className='text-[15px] text-[#1e191f] font-medium leading-tight'>{price}</div>
+      <div className=''>
+        <div className='text-[15px] hover:text-[17px] hover:text-[#413d42] text-[#1e191f] font-medium leading-tight'>{price}</div>
         <div className='text-[13px] text-[#1e191f]'>აირჩიეთ ფასი</div>
       </div>
         {

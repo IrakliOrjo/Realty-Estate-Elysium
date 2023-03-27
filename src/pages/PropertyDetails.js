@@ -33,7 +33,7 @@ const PropertyDetails = () => {
 
   return (
   <section>
-    <div className='container mx-auto min-h-[800px] mb-14 '>
+    <div className='container mx-auto min-h-[800px] pt-28 mb-14 '>
       <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between'>
         <div>
           <h2 className='text-2xl font-semibold'>{house.name}</h2>

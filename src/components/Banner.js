@@ -12,6 +12,8 @@ import Search from '../components/Search'
 
 const Banner = () => {
 
+
+
   
   const images = [
     'first-bg',
@@ -31,14 +33,16 @@ const Banner = () => {
   const backgroundImage = images[img]
 
 
-  console.log(bg3)
 
-  return <section  className={`h-full xl:py-[18em] ${backgroundImage} transition-transform ease-in-out bg-[#a79e9e] bg-blend-multiply  mb-8 xl:mb-12`}>
+
+  return <section  className={`h-full xl:py-[20em] ${backgroundImage} transition-transform pt-24
+   ease-in-out bg-[#a79e9e] bg-blend-multiply md:pt-[13em] mb-8 xl:mb-12`}>
     <div className='flex flex-col lg:flex-row mb-7'>
     <div className='  flex flex-col mt-11 items-center text-center justify-center flex-1 px-4 lg:px-0'>
-      <h1 className='text-4xl typewriter text-focus-in tracking-widest text-[#fffdff]  shadow-2xl xl:text-[3.85rem] font-semibold leading-none mb-6'>
+      <h1 className='text-[2.5rem] typewriter md:text-[3rem] text-focus-in tracking-widest text-[#fffdff] 
+       shadow-2xl xl:text-[3.85rem] font-semibold leading-none mb-6'>
         <span className='text-[#f8f8f8]'>იპოვეთ</span> თქვენი ოცნების სახლი</h1>
-      <p className=' mb-8 text-[1.15rem] shadow-2xl text-[#efeeff]'>Elysium Properties Real Estate, ჩვენ ვუზრუნველყოფთ კომფორტს.
+      <p className=' mb-8 text-[1.15rem] shadow-2xl text-[#efeeff]'>Elysium Luxury Properties, ჩვენ ვუზრუნველყოფთ კომფორტს.
       </p>
     </div>
     {/*Image*/}

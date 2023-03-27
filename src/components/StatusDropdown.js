@@ -6,8 +6,8 @@ import { Menu } from '@headlessui/react'
 
 import {HouseContext} from './HouseContext'
 
-const PropertyDropdown = () => {
-  const {property, setProperty, properties} = useContext(HouseContext)
+const StatusDropdown = () => {
+  const {status, setStatus, statuses} = useContext(HouseContext)
 
 
 
@@ -16,8 +16,8 @@ const PropertyDropdown = () => {
     <Menu.Button className='dropdown-btn w-full text-left' onClick={()=> setIsOpen(!isOpen) }>
       <RiHome5Line className='dropdown-icon-primary' />
       <div>
-        <div className='text-[15px] hover:text-[17px] hover:text-[#413d42] font-medium leading-tight'>{property}</div>
-        <div className='text-[13px]'>უძრავი ქონება</div>
+        <div className='text-[15px] hover:text-[17px] hover:text-[#413d42] font-medium leading-tight'>{status}</div>
+        <div className='text-[13px]'>გარიგების ტიპი</div>
       </div>
         {
           isOpen ? (
@@ -30,10 +30,10 @@ const PropertyDropdown = () => {
     </Menu.Button>
 
         <Menu.Items className='dropdown-menu'>
-          {properties.map((property,index) => {
+          {statuses.map((status,index) => {
             return (
-              <Menu.Item onClick={() => setProperty(property)}
-               className='cursor-pointer hover:text-violet-700 transition' as='li' key={index}>{property}</Menu.Item>
+              <Menu.Item onClick={() => setStatus(status)}
+               className='cursor-pointer hover:text-violet-700 transition' as='li' key={index}>{status}</Menu.Item>
             )
           })}
         </Menu.Items>
@@ -41,4 +41,4 @@ const PropertyDropdown = () => {
     </Menu>;
 };
 
-export default PropertyDropdown;
+export default StatusDropdown;

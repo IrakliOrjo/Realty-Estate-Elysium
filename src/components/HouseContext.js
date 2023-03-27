@@ -12,6 +12,9 @@ const HouseContextProvider = ({children}) => {
   const [countries, setCountries] = useState([]);
   const [property, setProperty] = useState('ქონების ტიპი (ნებისმიერი)');
   const [properties, setProperties] = useState([]);
+  const [houseType, setHouseType] = useState('');
+  const [status, setStatus] = useState('გარიგების ტიპი (ნებისმიერი)');
+  const [statuses, setStatuses] = useState([]);
   const [price, setPrice] = useState('ფასის ფარგლები (ნებისმიერი)');
   const [loading, setLoading] = useState(false);
 
@@ -30,6 +33,46 @@ const HouseContextProvider = ({children}) => {
     setCountries(uniqueCountries)
   },[]);
 
+  //Show houses button
+  function showHouses () {
+
+    setLoading(true);
+    const element = document.getElementById("houseList");
+  element.scrollIntoView({ behavior: "smooth" });
+
+    const onlyHouses = housesData.filter(house => {
+      if(house.type === 'სახლი'){
+        return house
+      }
+    })
+
+    setTimeout(() => {
+      console.log('asd')
+      return onlyHouses.length < 1 ? setHouses([]) :
+      setHouses(onlyHouses),
+      setLoading(false);
+    }, 1000);
+  }
+
+  //---------------Status
+   useEffect(() => {
+    const allStatus = houses.map((house) => {
+      return house.status;
+    })
+    
+//remove duplicates
+    const uniqueStatus = ['გარიგების ტიპი (ნებისმიერი)', ...
+    new Set(allStatus)]
+
+   
+
+    //set status state
+    setStatuses(uniqueStatus)
+  },[]);
+
+
+  //------------
+
 
   //duplicated useState. return all properties
   useEffect(() => {
@@ -47,9 +90,17 @@ const HouseContextProvider = ({children}) => {
     setProperties(uniqueProperties)
   },[]);
 
+
+  //show houses by clicking on menu houses
+ 
+
+  
+
   const handleClick = () => {
    //set loading
    setLoading(true);
+    const element = document.getElementById("houseList");
+  element.scrollIntoView({ behavior: "smooth" });
 
     //create a function that checks if the string 
     //includes '(any)' 
@@ -73,21 +124,19 @@ const HouseContextProvider = ({children}) => {
 
       //if all values are selected
       if(house.country === country && house.type
-        === property && 
-        housePrice >= minPrice && 
-        housePrice <= maxPrice){
+        === property && house.status === status){
           return house;
         }
 
         //if all values are default
         if(isDefault(country) && isDefault(property) &&
-        isDefault(price)){
+        isDefault(status)){
           return house;
         }
 
         //if country is not default 
         if(!isDefault(country) && isDefault(property) &&
-        isDefault(price)) {
+        isDefault(status)) {
           return house.country === country;
         }
 
@@ -95,41 +144,45 @@ const HouseContextProvider = ({children}) => {
 
         //if propery is not default
         if(!isDefault(property) && isDefault(country) 
-        && isDefault(price)){
+        && isDefault(status)){
           return house.type === property; 
         }
 
-        //if price is not default
+         //if status is not default
+        if(!isDefault(status) && isDefault(country) 
+        && isDefault(property)){
+          return house.status === status; 
+        }
+
+      { /*}  //if price is not default
         if(!isDefault(price) && isDefault(country) &&
         isDefault(property)){
           if(housePrice >= minPrice && housePrice <= 
             maxPrice) {
               return house;
             }
-        }
+        } */}
 
         //if country & property is not default
         if(!isDefault(country) && !isDefault(property)
-        && isDefault(price)){
+        && isDefault(status)){
           return house.country === country && house.type === property;
         }
 
         // if country and price not default
         if(!isDefault(country) && isDefault(property) 
-        && !isDefault(price)) {
-          if(housePrice >= minPrice && housePrice <= 
-            maxPrice) {
-            return house.country === country;
-          }
+        && !isDefault(status)) {
+         
+            return house.country === country && house.status;
+          
         }
 
         //property and price is not default
         if(isDefault(country) && !isDefault(property) &&
-        !isDefault(price)) {
-          if(housePrice >= minPrice && housePrice <= 
-            maxPrice) {
-              return house.type === property;
-            }
+        !isDefault(status)) {
+          
+              return house.type === property && house.status === status;
+            
         }
     })
 
@@ -150,10 +203,16 @@ const HouseContextProvider = ({children}) => {
     properties,
     price,
     setPrice,
+    status,
+    setStatus,
+    statuses,
+    setStatuses,
     houses,
     loading,
     handleClick,
     loading,
+    showHouses,
+    setHouseType,
   }}>
     {children}
     </HouseContext.Provider>;

@@ -57,8 +57,9 @@ import Agent12 from './assets/img/agents/agent12.png';
 export const housesData = [
  
   {
-    id: 2,
+    id: 1,
     type: 'სახლი',
+    status: 'იყიდება',
     name: 'სახლი დიდ დიღომში',
     description:
       'იყიდება 2 სართულიანი სახლი ეზოთი დიდ დიღომში, მაღალ ხარისხიანი რემონტით სახლი არის 322 კვ.მ, ეზო 500 კვ.მ თექნიკით და ავეჯით. 7 ოთახი, 4 საძინებელი, 2 სველი წერტილი.',
@@ -78,7 +79,7 @@ export const housesData = [
       furniture: true,
       elevator: false,
     },
-    price: '525000',
+    price: '525 000',
     agent: {
       image: Agent2,
       name: 'თინათინ დგებუაძე',
@@ -102,6 +103,104 @@ export const housesData = [
       {url:'https://i.ibb.co/9gY5JNz/Whats-App-Image-2023-03-21-at-16-45-16.jpg'},    
     ]
   },
-  
+   {
+    id: 2,
+    type: 'ბინა',
+    status: 'იყიდება',
+    name: 'ბინა ისანში',
+    description:
+      'იყიდება ბინა ისანში საუკეთესო ადგილას, მეტროსთან ახლოს ახალაშენებულ კორპუსში, კორპუსი აშენებულია ენერგოეფექტური მასალით, ფუნქციონირებს ლიფტი, დაცვა, სადარბაზოები მოწესრიგებული, ბინა არის უცხოვრებელი, საუკეთესო ხედებით, ახალგარემონტებული, მაღალი ხარისხის მასალებით, საუკეთესო ხარისხის ავეჯით (ლაბორატორიის) და ჩაშენებული ტექნიკით (Electrolux), (სარეცხი მანქანა, ჭურჭლის სარეცხი მანქანა, მაცივარი) ცენტრალური გათბობის ქვაბით, დიდი სამსუნგის ტელევიზორით, ჩართულია ინტერნეტი და ტელევიზია.',
+    image: 'https://i.ibb.co/1rNMwMH/5.jpg',
+    imageLg: 'https://i.ibb.co/1rNMwMH/5.jpg',
+    country: 'თბილისი',
+    address: 'თბილისი, ისანი',
+    bedrooms: '2',
+    bathrooms: '1',
+    surface: '63 კვ.მ',
+    details: {
+      repair: 'ევრო რემონტი',
+      balcony: true,
+      toilet: '1',
+      heat: 'ცენტრალური',
+      parking: false,
+      furniture: true,
+      elevator: true,
+    },
+    price: '115 000',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/QnN8nW6/1.jpg'},
+      {url:'https://i.ibb.co/Ctd8CW9/3.jpg'},
+      {url:'https://i.ibb.co/PhrL1s2/4.jpg'},
+      {url:'https://i.ibb.co/1rNMwMH/5.jpg'},
+      {url:'https://i.ibb.co/dk4438w/6.jpg'},
+      {url:'https://i.ibb.co/b2NjVgb/7.jpg'},
+      {url:'https://i.ibb.co/w6D0Txr/8.jpg'},
+      {url:'https://i.ibb.co/rv4fsmg/9.jpg'},
+      {url:'https://i.ibb.co/gmS9DmW/10.jpg'},
+      {url:'https://i.ibb.co/JvSZnxZ/11.jpg'},
+      {url:'https://i.ibb.co/Bc0jjgr/12.jpg'},
+      {url:'https://i.ibb.co/dMFzdtj/14.jpg'},
+      {url:'https://i.ibb.co/m5FPx1x/15.jpg'},
+      {url:'https://i.ibb.co/G09YT0y/19.jpg'},
+      {url:'https://i.ibb.co/9rLk26f/20.jpg'}, 
+      {url:'https://i.ibb.co/bstsvyT/21.jpg'}, 
+      {url:'https://i.ibb.co/Kj77VTQ/22.jpg'},     
+    ]
+  },
+  {
+    id: 3,
+    type: 'ბინა',
+    status: 'იყიდება',
+    name: '2 ოთახიანი ბინა საბურთალოზე',
+    description:
+      'იყიდება მაღალი ხარისხის რემონტით დელუქსის სახლში, იდეალურია გასაქირავებლად, 24/7 დაცვით',
+    image: 'https://i.ibb.co/4TPbGHq/4.jpg',
+    imageLg: 'https://i.ibb.co/4TPbGHq/4.jpg',
+    country: 'თბილისი',
+    address: 'ალექსიძის ქუჩა',
+    bedrooms: '2',
+    bathrooms: '1',
+    surface: '49 კვ.მ',
+    details: {
+      repair: 'ევრო რემონტი',
+      balcony: true,
+      toilet: '1',
+      heat: 'ცენტრალური',
+      parking: false,
+      furniture: true,
+      elevator: true,
+    },
+    price: '188 000',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/z27FymW/1.jpg'},
+      {url:'https://i.ibb.co/VCVMZB7/2.jpg'},
+      {url:'https://i.ibb.co/MZDN4x7/3.jpg'},
+      {url:'https://i.ibb.co/4TPbGHq/4.jpg'},
+      {url:'https://i.ibb.co/Hq3zg6g/5.jpg'},
+      {url:'https://i.ibb.co/ZL6KLm7/6.jpg'},
+      {url:'https://i.ibb.co/nzzBZ4g/7.jpg'},
+      {url:'https://i.ibb.co/cDLK3Ct/8.jpg'},
+      {url:'https://i.ibb.co/sQGYNNh/9.jpg'},
+      {url:'https://i.ibb.co/1zfKpHS/11.jpg'},
+      {url:'https://i.ibb.co/p3cgLYD/12.jpg'},
+      {url:'https://i.ibb.co/yfYd1sJ/13.jpg'},
+      {url:'https://i.ibb.co/vQycjRS/14.jpg'},
+      {url:'https://i.ibb.co/P6RP7S5/15.jpg'},
+        
+    ]
+  },
+ 
  
 ];

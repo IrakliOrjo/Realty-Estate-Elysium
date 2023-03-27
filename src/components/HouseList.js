@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useRef} from 'react';
 
 import {HouseContext} from './HouseContext';
 
@@ -9,6 +9,8 @@ import {Link} from 'react-router-dom';
 import {ImSpinner2} from 'react-icons/im'
 
 const HouseList = () => {
+
+  const myRef = useRef(null);
   const {houses,loading } = useContext(HouseContext);
 
 //if loading is true
@@ -22,9 +24,9 @@ if(loading) {
   }
 
 
-  return <section className='mb-20'>
-    <div className='container mx-auto'>
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-14'>
+  return <section className='mb-24 '>
+    <div id='houseList' className=' mx-auto'>
+      <div ref={myRef} className='grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-14'>
       {houses.map((house,index) =>{
         return (
           <Link to={`/property/${house.id}`} key={index}>
