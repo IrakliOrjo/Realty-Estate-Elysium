@@ -6,10 +6,10 @@ import {useParams} from 'react-router-dom'
 
 import {BiBed, BiBath, BiArea,BiMailSend} from 'react-icons/bi'
 import {IoIosConstruct} from 'react-icons/io'
-import {MdBalcony} from 'react-icons/md'
-import {FaToilet,FaParking,FaChair} from 'react-icons/fa'
+import {MdBalcony, MdOutlineDoneOutline} from 'react-icons/md'
+import {FaToilet,FaParking,FaChair, FaViber} from 'react-icons/fa'
 import {GiHeatHaze,GiElevator} from 'react-icons/gi'
-import {BsPhoneFill} from 'react-icons/bs'
+import {BsPhoneFill,BsWhatsapp} from 'react-icons/bs'
 import {AiFillFacebook} from 'react-icons/ai'
 
 
@@ -119,10 +119,20 @@ const PropertyDetails = () => {
           <div className='h-[1px] bg-[#9e7e9a] mb-4 w-[99%]'></div>
           <div className=''>
             <BsPhoneFill className='text-2xl text-violet-500 mr-2 inline-block' />
-            <p className='inline-block font-semibold mb-2'>{house.agent.phone}</p>
+            <p className='inline-block font-semibold mb-2 cursor-pointer'>{house.agent.phone} 
+           </p>
             <br />
+             < BsWhatsapp className='inline-block text-2xl mr-2 text-green-500' />
+             <p className='inline-block font-semibold cursor-pointer mb-2'>WhatsApp 
+             < MdOutlineDoneOutline className='inline-block text-xl ml-2 text-green-600' /></p>
+             <br />
+             < FaViber className='inline-block text-2xl mr-2 text-violet-500' />
+             <p className='inline-block font-semibold mb-2 cursor-pointer'>Viber
+             < MdOutlineDoneOutline className='inline-block text-xl ml-2 text-green-600' />
+             </p>
+             <br />
             <BiMailSend className='text-2xl text-violet-500 mr-2 inline-block' />
-            <p className='inline-block font-semibold mb-2'>{house.agent.email}</p>
+            <p className='inline-block font-semibold mb-2 cursor-pointer'>{house.agent.email}</p>
             
             
           </div>

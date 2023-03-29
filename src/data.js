@@ -83,7 +83,7 @@ export const housesData = [
     agent: {
       image: Agent2,
       name: 'თინათინ დგებუაძე',
-      phone: '598 99 18 18',
+      phone: '+995 598 99 18 18',
       email: 'tikadgebuadze@yahoo.com'
     },
    slides: [
@@ -130,7 +130,7 @@ export const housesData = [
     agent: {
       image: Agent2,
       name: 'თინათინ დგებუაძე',
-      phone: '598 99 18 18',
+      phone: '+995 598 99 18 18',
       email: 'tikadgebuadze@yahoo.com'
     },
    slides: [
@@ -163,7 +163,7 @@ export const housesData = [
     image: 'https://i.ibb.co/4TPbGHq/4.jpg',
     imageLg: 'https://i.ibb.co/4TPbGHq/4.jpg',
     country: 'თბილისი',
-    address: 'ალექსიძის ქუჩა',
+    address: 'თბილისი, ალექსიძის ქუჩა, საბურთალო',
     bedrooms: '2',
     bathrooms: '1',
     surface: '49 კვ.მ',
@@ -180,7 +180,7 @@ export const housesData = [
     agent: {
       image: Agent2,
       name: 'თინათინ დგებუაძე',
-      phone: '598 99 18 18',
+      phone: '+995 598 99 18 18',
       email: 'tikadgebuadze@yahoo.com'
     },
    slides: [
@@ -201,6 +201,53 @@ export const housesData = [
         
     ]
   },
- 
+ {
+    id: 4,
+    type: 'ბინა',
+    status: 'იყიდება',
+    name: '2 ოთახიანი ბინა საბურთალოზე',
+    description:
+      'იყიდება 2 ოთახიანი ბინა საბურთალოზე, ქავთარაძის ქუჩა არქის აშენებულ კორპუსში, 55 კვადრატი 7-ე სართული სულ 12 სართული, ახალი გარემონტებული, უცხოვრებელი ჩაშენებული სამზარეულო.',
+    image: 'https://i.ibb.co/XD5FTCQ/5.jpg',
+    imageLg: 'https://i.ibb.co/XD5FTCQ/5.jpg',
+    country: 'თბილისი',
+    address: 'თბილისი, ქავთარაძის ქუჩა, საბურთალო',
+    bedrooms: '2',
+    bathrooms: '1',
+    surface: '49 კვ.მ',
+    details: {
+      repair: 'ახალი გარემონტებული',
+      balcony: true,
+      toilet: '1',
+      heat: 'ცენტრალური',
+      parking: false,
+      furniture: false,
+      elevator: true,
+    },
+    price: '105 000',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '+995 598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/Mp5wFy4/1.jpg'},
+      {url:'https://i.ibb.co/NSdt4tt/2.jpg'},
+      {url:'https://i.ibb.co/kqV76h6/3.jpg'},
+      {url:'https://i.ibb.co/PDKkVHJ/4.jpg'},
+      {url:'https://i.ibb.co/XD5FTCQ/5.jpg'},
+      {url:'https://i.ibb.co/872gzSB/6.jpg'},
+      {url:'https://i.ibb.co/2FxvCCQ/7.jpg'},
+      {url:'https://i.ibb.co/BGK4cGH/8.jpg'},
+      {url:'https://i.ibb.co/xfC5wZY/9.jpg'},
+      {url:'https://i.ibb.co/Smj5Lkp/10.jpg'},
+      {url:'https://i.ibb.co/Lh21gtZ/11.jpg'},
+      {url:'https://i.ibb.co/SVJFWRF/12.jpg'},
+      {url:'https://i.ibb.co/C2gc976/13.jpg'},
+      
+        
+    ]
+  },
  
 ];
