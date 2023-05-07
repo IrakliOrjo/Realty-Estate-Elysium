@@ -249,5 +249,110 @@ export const housesData = [
         
     ]
   },
+  {
+    id: 5,
+    type: 'სახლი',
+    status: 'ქირავდება',
+    name: 'ქირავდება სახლი კრწანისში',
+    description:
+      'ქირავდება ულამაზესი კერძო სახლი 800 კვმ. მიწა 1800 ვკმ. დიდი გამწვანებული ეზოთი აუზით,საჩოგბურთო კორტებით, სატრენაჟორო დარბაზით',
+    image: 'https://i.ibb.co/3S40PBC/1.jpg',
+    imageLg: 'https://i.ibb.co/9pp8kRC/2.jpg',
+    country: 'თბილისი',
+    address: 'თბილისი, კრწანისი, მთაწმინდის რაიონი,',
+    bedrooms: '5',
+    bathrooms: '5',
+    surface: '800 კვ.მ',
+    details: {
+      repair: 'ახალი გარემონტებული',
+      balcony: true,
+      toilet: '3',
+      heat: 'ცენტრალური',
+      parking: true,
+      furniture: true,
+      elevator: false,
+    },
+    price: '20,000',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '+995 598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/3S40PBC/1.jpg'},
+      {url:'https://i.ibb.co/9pp8kRC/2.jpg'},
+      {url:'https://i.ibb.co/4Yk1cWQ/3.jpg'},
+      {url:'https://i.ibb.co/3WPf7M9/4.jpg'},
+      {url:'https://i.ibb.co/FsPM6Xb/5.jpg'},
+      {url:'https://i.ibb.co/4MRgJ3h/6.jpg'},
+      {url:'https://i.ibb.co/PYkcw4s/7.jpg'},
+      {url:'https://i.ibb.co/zZCJC6d/8.jpg'},
+      {url:'https://i.ibb.co/23dyZmK/9.jpg'},
+      {url:'https://i.ibb.co/D5KfjFX/10.jpg'},
+      {url:'https://i.ibb.co/TmCSkJw/11.jpg'},
+      {url:'https://i.ibb.co/7GkDm0k/12.jpg'},
+      {url:'https://i.ibb.co/yfXZWHb/13.jpg'},
+      
+        
+    ]
+  },
+  {
+    id: 6,
+    type: 'სახლი',
+    status: 'იყიდება',
+    name: 'იყიდება სახლი ქოშიგორაზე',
+    description:
+      'იყიდება ულამაზესი 4 სართულიანი სახლი(800კვმ),  მიწა(2000კვმ) ქოშიგორაზე, წყნარ ეკოლოგიურათ სუფთა ადგილას, ყველა ოთახიდან პანორამული ხედით ახალი აშენებულია უცხოვრებელი, ღია საცურაო აუზი, საუნა, გასართობი სივრცით, დამონტაჟებულია 13 კამერა და დაცვის სისტემა',
+    image: 'https://i.ibb.co/J3TGQ9C/1.jpg',
+    imageLg: 'https://i.ibb.co/pvndywD/8.jpg',
+    country: 'თბილისი',
+    address: 'თბილისი, ქოშიგორა',
+    bedrooms: '7',
+    bathrooms: '7',
+    surface: '600 კვ.მ',
+    details: {
+      repair: 'ახალი გარემონტებული',
+      balcony: true,
+      toilet: '7',
+      heat: 'ცენტრალური',
+      parking: true,
+      furniture: true,
+      elevator: false,
+    },
+    price: '160 0000',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '+995 598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/J3TGQ9C/1.jpg'},
+      {url:'https://i.ibb.co/X4W6CMD/2.jpg'},
+      {url:'https://i.ibb.co/XLjPWj7/3.jpg'},
+      {url:'https://i.ibb.co/k33tzLj/4.jpg'},
+      {url:'https://i.ibb.co/K5CYL2P/5.jpg'},
+      {url:'https://i.ibb.co/pjZbH7V/6.jpg'},
+      {url:'https://i.ibb.co/F3LjRHz/7.jpg'},
+      {url:'https://i.ibb.co/pvndywD/8.jpg'},
+      {url:'https://i.ibb.co/PCNpNVg/9.jpg'},
+      {url:'https://i.ibb.co/jrJf9DZ/10.jpg'},
+      {url:'https://i.ibb.co/zSNFt2t/11.jpg'},
+      {url:'https://i.ibb.co/k6dw212/12.jpg'},
+      {url:'https://i.ibb.co/Mnkbz8V/13.jpg'},
+      {url:'https://i.ibb.co/9WPQ3Xh/14.jpg'},
+      {url:'https://i.ibb.co/XWNM2HT/15.jpg'},
+      {url:'https://i.ibb.co/Bfh6KXV/16.jpg'},
+      {url:'https://i.ibb.co/G9DS3VL/17.jpg'},
+      {url:'https://i.ibb.co/xjB2hCM/18.jpg'},
+      {url:'https://i.ibb.co/LRjfkNh/19.jpg'},
+      {url:'https://i.ibb.co/TMJ0Dq1/20.jpg'},
+      {url:'https://i.ibb.co/HGzZQsf/21.jpg'},
+      
+      
+        
+    ]
+  },
  
 ];
