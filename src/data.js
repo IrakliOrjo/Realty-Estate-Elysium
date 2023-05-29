@@ -593,7 +593,7 @@ export const housesData = [
       furniture: true,
       elevator: true,
     },
-    price: '160 000',
+    price: '185 000',
     agent: {
       image: Agent2,
       name: 'თინათინ დგებუაძე',
