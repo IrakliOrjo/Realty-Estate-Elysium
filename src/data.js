@@ -524,5 +524,100 @@ export const housesData = [
    
     ]
   },
+  {
+    id: 10,
+    type: 'ბინა',
+    status: 'იყიდება',
+    name: 'იყიდება ბინა ვაკეში, ამირეჯიბის ქუჩა',
+    description:
+      'იყიდება გარემონტებული 2 ოთახიანი ბინა ავეჯით 66კვმ',
+    image: 'https://i.ibb.co/C6LTPjg/1.jpg',
+    imageLg: 'https://i.ibb.co/C6LTPjg/1.jpg',
+    country: 'თბილისი',
+    address: 'თბილისი, ვაკე, ამირეჯიბის ქუჩა',
+    bedrooms: '2',
+    bathrooms: '1',
+    surface: '66 კვ.მ',
+    details: {
+      repair: 'ახალი გარემონტებული',
+      balcony: true,
+      toilet: '1',
+      heat: 'ცენტრალური',
+      parking: true,
+      furniture: true,
+      elevator: true,
+    },
+    price: '160 000',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '+995 598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/C6LTPjg/1.jpg'},
+      {url:'https://i.ibb.co/Jsgb1Vk/2.jpg'},
+      {url:'https://i.ibb.co/TBYmz9h/3.jpg'},
+      {url:'https://i.ibb.co/dQnHS7h/4.jpg'},
+      {url:'https://i.ibb.co/8Br6n6H/5.jpg'},
+      {url:'https://i.ibb.co/LnybH46/6.jpg'},
+      {url:'https://i.ibb.co/q5qjpx9/7.jpg'},
+      {url:'https://i.ibb.co/qNs3ffr/8.jpg'},
+      {url:'https://i.ibb.co/xXc894F/9.jpg'},
+      {url:'https://i.ibb.co/3rjyX5s/10.jpg'},
+      {url:'https://i.ibb.co/zszBfxy/11.jpg'},
+      {url:'https://i.ibb.co/ZchvPxP/12.jpg'},
+       
+    ]
+  },
+  {
+    id: 11,
+    type: 'ბინა',
+    status: 'იყიდება',
+    name: 'იყიდება საბურთალოზე, კარტოზიას ქუჩა',
+    description:
+      'იყიდება 3 ოთახიანი გარემონტებული ბინა 86კვმ. ავეჯით და ტექნიკით. 22/28 სართული',
+    image: 'https://i.ibb.co/6YWhJW6/1.jpg',
+    imageLg: 'https://i.ibb.co/6YWhJW6/1.jpg',
+    country: 'თბილისი',
+    address: 'თბილისი, საბურთალო, კარტოზიას ქუჩა',
+    bedrooms: '3',
+    bathrooms: '1',
+    surface: '86 კვ.მ',
+    details: {
+      repair: 'ახალი გარემონტებული',
+      balcony: true,
+      toilet: '1',
+      heat: 'ცენტრალური',
+      parking: true,
+      furniture: true,
+      elevator: true,
+    },
+    price: '160 000',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '+995 598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/6YWhJW6/1.jpg'},
+      {url:'https://i.ibb.co/Sy3g6JP/2.jpg'},
+      {url:'https://i.ibb.co/Q9qG0vX/3.jpg'},
+      {url:'https://i.ibb.co/K6gy1TV/4.jpg'},
+      {url:'https://i.ibb.co/XY60Hvp/5.jpg'},
+      {url:'https://i.ibb.co/yQDBTRW/6.jpg'},
+      {url:'https://i.ibb.co/njqJhrD/7.jpg'},
+      {url:'https://i.ibb.co/C71zmty/8.jpg'},
+      {url:'https://i.ibb.co/4WZC0mk/9.jpg'},
+      {url:'https://i.ibb.co/YRbBYF8/10.jpg'},
+      {url:'https://i.ibb.co/dfHQNs5/11.jpg'},
+      {url:'https://i.ibb.co/2MG76Fw/12.jpg'},
+      {url:'https://i.ibb.co/ctRsTzL/13.jpg'},
+      {url:'https://i.ibb.co/4g1pZXn/14.jpg'},
+      {url:'https://i.ibb.co/2Yw4wym/15.jpg'},
+       
+    ]
+  },
  
 ];
