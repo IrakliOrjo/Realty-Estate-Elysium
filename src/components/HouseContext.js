@@ -54,6 +54,26 @@ const HouseContextProvider = ({children}) => {
     }, 1000);
   }
 
+  function showFlats () {
+
+    setLoading(true);
+    const element = document.getElementById("houseList");
+  element.scrollIntoView({ behavior: "smooth" });
+
+    const onlyFlats = housesData.filter(house => {
+      if(house.type === 'ბინა'){
+        return house
+      }
+    })
+
+    setTimeout(() => {
+      console.log('asd')
+      return onlyFlats.length < 1 ? setHouses([]) :
+      setHouses(onlyFlats),
+      setLoading(false);
+    }, 1000);
+  }
+
   //---------------Status
    useEffect(() => {
     const allStatus = houses.map((house) => {
@@ -213,6 +233,7 @@ const HouseContextProvider = ({children}) => {
     loading,
     showHouses,
     setHouseType,
+    showFlats,
   }}>
     {children}
     </HouseContext.Provider>;
