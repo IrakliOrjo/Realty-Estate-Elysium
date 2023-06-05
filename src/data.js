@@ -619,5 +619,110 @@ export const housesData = [
        
     ]
   },
+  {
+    id: 12,
+    type: 'ბინა',
+    status: 'იყიდება',
+    name: 'იყიდება ვაკეში, თამარაშვილის ქუჩა',
+    description:
+      'იყიდება ახალაშენებულ კორპუსში 3 ოთახიანი, დიზაინერული რემონტით ძვირადღირებული მასალით.100კვმ. 25/28 სართული. კერამოგრანიტის იატაკი, მიუნხენის შელესილი შპალერი. კარები ალუმინის ჩარჩოთი, ფარუოლი საკეტები ხმაურის იზოლაციით. შავი სარკისებრი ჭერი, ჩაშენებული შავი აკრილის სამზარეულო BLUM მექანიზმებით, ტექნიკით, ინდუქციური ქურა, ჭურჭლის სარეცხი მანქანა 12 პერსონაზე. ელექტრო ღუმელი მიკროტალღური, ჩაშენებული მაცივარი, საძინებლის კომპლექტი, მაგიდები სკამები სავარძლები. თბილისის პანორამული ხედით. ',
+    image: 'https://i.ibb.co/jk0dz79/10.jpg',
+    imageLg: 'https://i.ibb.co/jk0dz79/10.jpg',
+    country: 'თბილისი',
+    address: 'თბილისი, ვაკე, თამარაშვილის ქუჩა',
+    bedrooms: '3',
+    bathrooms: '2',
+    surface: '100 კვ.მ',
+    details: {
+      repair: 'ახალი გარემონტებული',
+      balcony: true,
+      toilet: '2',
+      heat: 'ცენტრალური',
+      parking: true,
+      furniture: true,
+      elevator: true,
+    },
+    price: '320 000',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '+995 598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/MDbRv22/1.jpg'},
+      {url:'https://i.ibb.co/5MVp44Z/2.jpg'},
+      {url:'https://i.ibb.co/0QM58KK/3.jpg'},
+      {url:'https://i.ibb.co/ZJ5h1KV/4.jpg'},
+      {url:'https://i.ibb.co/Sm64fVm/5.jpg'},
+      {url:'https://i.ibb.co/w0fYqcW/6.jpg'},
+      {url:'https://i.ibb.co/FgGTDVb/7.jpg'},
+      {url:'https://i.ibb.co/FzBnyTG/8.jpg'},
+      {url:'https://i.ibb.co/xfN0T3G/9.jpg'},
+      {url:'https://i.ibb.co/jk0dz79/10.jpg'},
+      {url:'https://i.ibb.co/0rQXQhJ/11.jpg'},
+      {url:'https://i.ibb.co/MG2mp71/12.jpg'},
+      {url:'https://i.ibb.co/DY4FK1T/13.jpg'},
+      {url:'https://i.ibb.co/QQ49bpG/14.jpg'},
+      {url:'https://i.ibb.co/CKJWHCm/15.jpg'},
+      {url:'https://i.ibb.co/ZKXZJ0b/16.jpg'},
+      {url:'https://i.ibb.co/17mQTVM/17.jpg'},
+      {url:'https://i.ibb.co/Q9QwtcP/18.jpg'},
+      {url:'https://i.ibb.co/1RzKNzX/19.jpg'},
+      {url:'https://i.ibb.co/gW13DQN/20.jpg'},
+      {url:'https://i.ibb.co/zF1JTNh/21.jpg'},
+      {url:'https://i.ibb.co/bWgsFKy/22.jpg'},
+      {url:'https://i.ibb.co/j6NGnsG/23.jpg'},
+       
+    ]
+  },
+  {
+    id: 13,
+    type: 'ბინა',
+    status: 'იყიდება',
+    name: 'იყიდება ვაკეში, თამარაშვილის ქუჩა',
+    description:
+      'იყიდება ბინა თამარაშვილზე ახალ სახლში 204 კვ ფასი 570000$ ევრორემონტო ავეჯით ტექნიკით უცხოვრებელი, 4 ოთახი , 3 სვ წერტილი 17/24 სართულზე',
+    image: 'https://i.ibb.co/vXSYvX9/1.jpg',
+    imageLg: 'https://i.ibb.co/vXSYvX9/1.jpg',
+    country: 'თბილისი',
+    address: 'თბილისი, ვაკე, თამარაშვილის ქუჩა',
+    bedrooms: '4',
+    bathrooms: '3',
+    surface: '204 კვ.მ',
+    details: {
+      repair: 'ახალი გარემონტებული',
+      balcony: true,
+      toilet: '3',
+      heat: 'ცენტრალური',
+      parking: true,
+      furniture: true,
+      elevator: true,
+    },
+    price: '570 000',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '+995 598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/vXSYvX9/1.jpg'},
+      {url:'https://i.ibb.co/yQ1LBT5/2.jpg'},
+      {url:'https://i.ibb.co/wRdHLKh/3.jpg'},
+      {url:'https://i.ibb.co/fkfhvcb/4.jpg'},
+      {url:'https://i.ibb.co/QCtJqHd/5.jpg'},
+      {url:'https://i.ibb.co/k1QfSfg/6.jpg'},
+      {url:'https://i.ibb.co/WpfKjGw/7.jpg'},
+      {url:'https://i.ibb.co/1q6hjtp/8.jpg'},
+      {url:'https://i.ibb.co/Jnk5dZ2/9.jpg'},
+      {url:'https://i.ibb.co/j6YDzTL/10.jpg'},
+      {url:'https://i.ibb.co/rwtYM0x/11.jpg'},
+      {url:'https://i.ibb.co/Hp2bcZK/12.jpg'},
+      
+      
+       
+    ]
+  },
  
 ];
