@@ -35,7 +35,7 @@ const Header = () => {
     },)
 })
 
- const {showHouses,setHouseType } = useContext(HouseContext);
+ const {showHouses,showFlats,setHouseType } = useContext(HouseContext);
 
   return <header id='head' className={`${bg ?
         "border-b-[1px] border-gray-300 shadow-md" : "border-gray-800 border-b-[1px]" 
@@ -46,11 +46,14 @@ const Header = () => {
       border-gray-400 backdrop-contrast-150 backdrop-brightness-125">
       <ul className=' gap-2 hidden md:flex'>
         <li className='text-white text-[1.1rem] rounded-sm hover:bg-violet-600 hover:ease-in hover:duration-300 hover:transition-colors delay-75 cursor-pointer w-24 h-12 flex items-center justify-center font-[500]'>
-          <Link to='/'>მთავარი</Link></li>
+          <a href="https://elisha.ge/">მთავარი</a></li>
        
         <li onClick = {showHouses} className='text-white text-[1.1rem] rounded-sm hover:bg-violet-600 hover:ease-in hover:duration-300
         hover:transition-colors delay-100 w-24 h-12 flex items-center cursor-pointer justify-center font-[500]'>
               სახლები       </li>
+              <li onClick = {showFlats} className='text-white text-[1.1rem] rounded-sm hover:bg-violet-600 hover:ease-in hover:duration-300
+        hover:transition-colors delay-100 w-24 h-12 flex items-center cursor-pointer justify-center font-[500]'>
+              ბინები       </li>
         <li className='text-white text-[1.1rem] rounded-sm hover:bg-violet-600 hover:ease-in hover:duration-300
         hover:transition-colors delay-100 w-24 h-12 flex items-center cursor-pointer justify-center font-[500]'>მიწები</li>
         <li className='text-white text-[1.1rem] rounded-sm hover:bg-violet-600 hover:ease-in hover:duration-300
