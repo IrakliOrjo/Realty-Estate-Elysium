@@ -33,7 +33,7 @@ if(loading) {
             <House house={house} />
           </Link>
         )
-      })}
+      }).reverse()}
     </div>
     </div>
   </section>;
