@@ -20,6 +20,13 @@ import { HouseContext } from './HouseContext';
 
 const Header = () => {
 
+  const [header,setHeader] = useState(false)
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 50 ? setHeader(true) : setHeader(false)
+    })
+  })
+
 
 
   const [navMobile, setNavMobile] = useState(false)
@@ -40,6 +47,7 @@ const Header = () => {
   return <header id='head' className={`${bg ?
         "border-b-[1px] border-gray-300 shadow-md" : "border-gray-800 border-b-[1px]" 
        }
+       ${header ? 'bg-transparent' : 'bg-red-300 shadow-lg'}
   bg-[#a79e9e] fixed w-full z-50 bg-blend-multiply transition-all duration-300 `}>
     <div className=" bg-[#6e9aeb17]  py-6 px-4  sm:px-14 md:px-28 lg:px-40
      w-full mx-auto flex justify-between md:justify-center lg:justify-between items-center backdrop-blur 
