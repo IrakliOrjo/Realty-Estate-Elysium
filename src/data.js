@@ -719,9 +719,67 @@ export const housesData = [
       {url:'https://i.ibb.co/j6YDzTL/10.jpg'},
       {url:'https://i.ibb.co/rwtYM0x/11.jpg'},
       {url:'https://i.ibb.co/Hp2bcZK/12.jpg'},
-      
-      
-       
+
+    ]
+  },
+  {
+    id: 14,
+    type: 'ბინა',
+    status: 'ქირავდება',
+    name: 'ქირავდება ვერა, ფიქრის გორა',
+    description:
+      'ქირავდება 185კვმ. ბინა ვერაზე, ფიქრის გორაზე. 3 ოთახი, 3 სველი წერტილი, აივანი. აღჭურვილია საუკეთესო ტექნიკით და ავეჯით. 5 სართული',
+    image: 'https://i.ibb.co/GWwVGVS/1.jpg',
+    imageLg: 'https://i.ibb.co/GWwVGVS/1.jpg',
+    country: 'თბილისი',
+    address: 'თბილისი, ვერა, ფიქრის გორა',
+    bedrooms: '3',
+    bathrooms: '3',
+    surface: '185 კვ.მ',
+    details: {
+      repair: 'ახალი გარემონტებული',
+      balcony: true,
+      toilet: '3',
+      heat: 'ცენტრალური',
+      parking: true,
+      furniture: true,
+      elevator: true,
+    },
+    price: '2500',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '+995 598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/GWwVGVS/1.jpg'},
+      {url:'https://i.ibb.co/ZxVf9ny/2.jpg'},
+      {url:'https://i.ibb.co/vdN3hHQ/3.jpg'},
+      {url:'https://i.ibb.co/jJ4G5mr/4.jpg'},
+      {url:'https://i.ibb.co/DWWvBhv/5.jpg'},
+      {url:'https://i.ibb.co/PjddS56/6.jpg'},
+      {url:'https://i.ibb.co/vcSvXWP/7.jpg'},
+      {url:'https://i.ibb.co/ZV61tQm/8.jpg'},
+      {url:'https://i.ibb.co/0Vr5GSV/9.jpg'},
+      {url:'https://i.ibb.co/bmdPX3J/10.jpg'},
+      {url:'https://i.ibb.co/wQwbz43/11.jpg'},
+      {url:'https://i.ibb.co/w6GbTLG/12.jpg'},
+      {url: 'https://i.ibb.co/mF51Q39/13.jpg'},
+      {url:'https://i.ibb.co/mGnjYwx/14.jpg'},
+      {url:'https://i.ibb.co/D1YtYnj/15.jpg'},
+      {url:'https://i.ibb.co/Bqq7zb8/16.jpg'},
+      {url:'https://i.ibb.co/wSvxQwd/17.jpg'},
+      {url:'https://i.ibb.co/t8Zp1sQ/18.jpg'},
+      {url:'https://i.ibb.co/KXMzyVs/19.jpg'},
+      {url:'https://i.ibb.co/fXWy7KM/20.jpg'},
+      {url:'https://i.ibb.co/rmJNj4V/21.jpg'},
+      {url:'https://i.ibb.co/z2qmpz9/22.jpg'},
+      {url:'https://i.ibb.co/W02cP5b/23.jpg'},
+      {url:'https://i.ibb.co/rFbVPgq/24.jpg'},
+      {url:'https://i.ibb.co/zXg8WgJ/25.jpg'},
+      {url:'https://i.ibb.co/sms0h6v/26.jpg'},
+
     ]
   },
  
