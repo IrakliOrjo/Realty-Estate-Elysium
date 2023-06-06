@@ -782,5 +782,51 @@ export const housesData = [
 
     ]
   },
+  {
+    id: 15,
+    type: 'ბინა',
+    status: 'ქირავდება',
+    name: 'ქირავდება მთაწმინდა, მაყაშვილის ქუჩა',
+    description:
+      'ქირავდება 140კვ.მ ბინა მთაწმინდაზე. 4 ოთახი, 3 საძინებელი, 2 სველი წერტილი, 3 აივანი. ბინა აღჭურვილია ყველა საჭირო ინვენტარით. 3 კონდენციონერი. კატეგორიული მოთხოვნა: შინაური ცხოველების გარეშე. ფასი 1800$ ',
+    image: 'https://i.ibb.co/4TQMWtF/1.png',
+    imageLg: 'https://i.ibb.co/4TQMWtF/1.png',
+    country: 'თბილისი',
+    address: 'თბილისი, მთაწმინდა, მაყაშვილის ქუჩა',
+    bedrooms: '4',
+    bathrooms: '2',
+    surface: '140 კვ.მ',
+    details: {
+      repair: 'ახალი გარემონტებული',
+      balcony: true,
+      toilet: '2',
+      heat: 'ცენტრალური',
+      parking: true,
+      furniture: true,
+      elevator: true,
+    },
+    price: '1800',
+    agent: {
+      image: Agent2,
+      name: 'თინათინ დგებუაძე',
+      phone: '+995 598 99 18 18',
+      email: 'tikadgebuadze@yahoo.com'
+    },
+   slides: [
+      {url: 'https://i.ibb.co/4TQMWtF/1.png'},
+      {url:'https://i.ibb.co/MVSbfLT/2.png'},
+      {url:'https://i.ibb.co/x6KsZQ1/3.png'},
+      {url:'https://i.ibb.co/JnRCP4f/4.png'},
+      {url:'https://i.ibb.co/0rMmhGD/5.png'},
+      {url:'https://i.ibb.co/PxY0CR6/6.png'},
+      {url:'https://i.ibb.co/jkNqzQF/7.png'},
+      {url:'https://i.ibb.co/VvgNnzF/8.png'},
+      {url:'https://i.ibb.co/rvs0j8B/9.png'},
+      {url:'https://i.ibb.co/xLHMDnx/10.png'},
+      {url:'https://i.ibb.co/S38HfJV/11.png'},
+      {url:'https://i.ibb.co/0C5S6jv/12.png'},
+      {url: 'https://i.ibb.co/YZn6zMD/13.png'},
+    ]
+  },
  
 ];
